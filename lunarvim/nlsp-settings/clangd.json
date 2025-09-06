@@ -1,0 +1,16 @@
+{
+  "clangd.path": "/usr/local/bin/clangd",
+  "clangd.fallbackFlags": ["-std=c++20"],
+  "clangd.arguments": [
+    "--background-index",
+    "-j=10"
+    "--function-arg-placeholders"
+    "--fallback-style=Google",
+    "--all-scopes-completion",
+    "--clang-tidy",
+    "--log=error",
+    "--completion-style=detailed",
+    "--pch-storage=memory", 
+    "--header-insertion=iwyu",
+  ]
+}
